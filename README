@@ -1,0 +1,20 @@
+Google Currency Convertor
+
+Convert a Given form of current to other
+
+Usage
+  Install the gem
+  
+
+  irb >
+
+   require "rubygems"
+   require "google_currency_convertor"
+
+   ##  amount -> 100
+   ##  current currency -> "INR"
+   ##  resulting currency -> "USD"(optinal default="USD")
+
+   g = Money::Bank::CurrencyConvertor.new(100,"INR","AUD")
+   g.covert
+   ## 2.213 AUS Dollar
